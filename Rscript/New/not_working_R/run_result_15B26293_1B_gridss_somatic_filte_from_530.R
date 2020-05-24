@@ -353,5 +353,4 @@
                                                                         > dev.off()
                                                                         null device 
                                                                         1 
-                                                                        > git add -A
-                                                                        Error: unexpected symbol in "git add"
+                                                                 
