@@ -1,0 +1,40 @@
+Using working directory "/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122"
+Thu May 28 14:28:00 AEST 2020: Full log file is: /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/gridss.full.20200528_142800.trqn-n051.hpc.wehi.edu.au.15600.log
+Thu May 28 14:28:00 AEST 2020: Found /usr/bin/time
+Thu May 28 14:28:00 AEST 2020: Using reference genome "/home/wong.b/onj_DURATION/hg19_BW/hg19.fa"
+Thu May 28 14:28:00 AEST 2020: Using assembly bam /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Thu May 28 14:28:00 AEST 2020: Using output VCF /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Thu May 28 14:28:00 AEST 2020: Using 8 worker threads.
+Thu May 28 14:28:00 AEST 2020: Using blacklist /home/wong.b/onj_DURATION/hg19_BW/wgEncodeDacMapabilityConsensusExcludable.bed
+Thu May 28 14:28:00 AEST 2020: Using JVM maximum heap size of 25g for assembly and variant calling.
+Thu May 28 14:28:00 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Thu May 28 14:28:00 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Thu May 28 14:28:00 AEST 2020: Found /stornext/System/data/apps/R/R-3.6.2/lib64/R/bin/Rscript
+Thu May 28 14:28:00 AEST 2020: Found /stornext/System/data/apps/samtools/samtools-1.9/bin/samtools
+Thu May 28 14:28:00 AEST 2020: Found /stornext/System/data/apps/java/java-1.8.0_211/bin/java
+Thu May 28 14:28:00 AEST 2020: samtools version: 1.9+htslib-1.9
+Thu May 28 14:28:00 AEST 2020: R version: R scripting front-end version 3.6.2 (2019-12-12)
+Thu May 28 14:28:00 AEST 2020: bwa Version: 0.7.15-r1140
+Thu May 28 14:28:00 AEST 2020: time version: GNU time 1.7
+Thu May 28 14:28:00 AEST 2020: bash version: GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+Thu May 28 14:28:01 AEST 2020: java version: java version "1.8.0_211"
+Java(TM) SE Runtime Environment (build 1.8.0_211-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
+Thu May 28 14:28:01 AEST 2020: Max file handles: 32768
+Thu May 28 14:28:01 AEST 2020: Running GRIDSS steps: setupreference, preprocess, assemble, call,
+Thu May 28 14:28:01 AEST 2020: Running	PrepareReference	(once-off setup for reference genome)
+Thu May 28 14:28:02 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Thu May 28 14:28:02 AEST 2020: Skipping pre-processing as /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/CL1000074821_merged.bam.gridss.working/CL1000074821_merged.bam.sv.bam already exists. /home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Thu May 28 14:28:02 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Thu May 28 14:28:02 AEST 2020: Skipping pre-processing as /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122_sort_mark.bam.gridss.working/MESO_122_sort_mark.bam.sv.bam already exists. /home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Thu May 28 14:28:02 AEST 2020: Start assembly	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Thu May 28 14:28:02 AEST 2020: Skipping assembly as /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam already exists.	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Thu May 28 14:28:02 AEST 2020: Complete assembly	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Thu May 28 14:28:02 AEST 2020: Start calling	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Thu May 28 14:28:02 AEST 2020: Skipping variant calling	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Thu May 28 14:28:02 AEST 2020: Complete calling	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Thu May 28 14:28:02 AEST 2020: Run complete with 0 warnings and 0 errors.
+Error in (function (object, class, nargs)  : 
+  Invalid argument value: expecting integer but got: (NA).
+Calls: parse_args -> mapply -> <Anonymous>
+Execution halted
