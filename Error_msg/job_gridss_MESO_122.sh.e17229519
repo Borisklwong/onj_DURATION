@@ -1,0 +1,52 @@
+Using working directory "/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122"
+Wed May 27 20:37:07 AEST 2020: Full log file is: /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/gridss.full.20200527_203707.trqn-n051.hpc.wehi.edu.au.12777.log
+Wed May 27 20:37:07 AEST 2020: Found /usr/bin/time
+Wed May 27 20:37:07 AEST 2020: Using reference genome "/home/wong.b/onj_DURATION/hg19_BW/hg19.fa"
+Wed May 27 20:37:07 AEST 2020: Using assembly bam /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Wed May 27 20:37:07 AEST 2020: Using output VCF /home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 20:37:07 AEST 2020: Using 8 worker threads.
+Wed May 27 20:37:07 AEST 2020: Using blacklist /home/wong.b/onj_DURATION/hg19_BW/wgEncodeDacMapabilityConsensusExcludable.bed
+Wed May 27 20:37:07 AEST 2020: Using JVM maximum heap size of 25g for assembly and variant calling.
+Wed May 27 20:37:07 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Wed May 27 20:37:07 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Wed May 27 20:37:07 AEST 2020: Found /stornext/System/data/apps/R/R-3.6.2/lib64/R/bin/Rscript
+Wed May 27 20:37:07 AEST 2020: Found /stornext/System/data/apps/samtools/samtools-1.9/bin/samtools
+Wed May 27 20:37:07 AEST 2020: Found /stornext/System/data/apps/java/java-1.8.0_211/bin/java
+Wed May 27 20:37:07 AEST 2020: samtools version: 1.9+htslib-1.9
+Wed May 27 20:37:07 AEST 2020: R version: R scripting front-end version 3.6.2 (2019-12-12)
+Wed May 27 20:37:07 AEST 2020: bwa Version: 0.7.15-r1140
+Wed May 27 20:37:07 AEST 2020: time version: GNU time 1.7
+Wed May 27 20:37:07 AEST 2020: bash version: GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+Wed May 27 20:37:08 AEST 2020: java version: java version "1.8.0_211"
+Java(TM) SE Runtime Environment (build 1.8.0_211-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
+Wed May 27 20:37:08 AEST 2020: Max file handles: 32768
+Wed May 27 20:37:08 AEST 2020: Running GRIDSS steps: setupreference, preprocess, assemble, call,
+Wed May 27 20:37:08 AEST 2020: Running	PrepareReference	(once-off setup for reference genome)
+Wed May 27 20:37:09 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Wed May 27 20:37:09 AEST 2020: Running	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam	first 10000000 records
+Wed May 27 20:37:44 AEST 2020: Running	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Wed May 27 21:04:29 AEST 2020: Running	PreprocessForBreakendAssembly|samtools	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Wed May 27 21:48:35 AEST 2020: Complete pre-processing	/home/wong.b/onj_DURATION/processing/BGI_public/CL1000074821_merged.bam
+Wed May 27 21:48:35 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Wed May 27 21:48:35 AEST 2020: Running	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam	first 10000000 records
+Wed May 27 21:49:18 AEST 2020: Running	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Wed May 27 22:09:23 AEST 2020: Running	PreprocessForBreakendAssembly|samtools	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Wed May 27 22:23:40 AEST 2020: Complete pre-processing	/home/wong.b/onj_DURATION/processing/MESO/MESO_122_process/MESO_122_sort_mark.bam
+Wed May 27 22:23:40 AEST 2020: Start assembly	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Wed May 27 22:23:40 AEST 2020: Running	AssembleBreakends	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam	job 0	total jobs 1
+Wed May 27 23:00:55 AEST 2020: Running	CollectGridssMetrics	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Wed May 27 23:01:18 AEST 2020: Running	SoftClipsToSplitReads|samtools	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Wed May 27 23:04:23 AEST 2020: Complete assembly	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.assembly.bam
+Wed May 27 23:04:23 AEST 2020: Start calling	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 23:04:23 AEST 2020: Running	IdentifyVariants	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 23:09:07 AEST 2020: Running	AnnotateVariants	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 23:39:36 AEST 2020: Running	AnnotateInsertedSequence	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 23:41:04 AEST 2020: Complete calling	/home/wong.b/onj_DURATION/processing/MESO/gridss/MESO_122/MESO_122.gridss.vcf
+Wed May 27 23:41:04 AEST 2020: Run complete with 82 warnings and 3 errors.
+Argument '--pairoutput' is not a defined optional argument or flag
+Argument '--pairoutput_details' is not a defined optional argument or flag
+Error in preprocess_argv(argv, parser) : 
+  Undefined argument labels supplied
+Calls: parse_args -> preprocess_argv
+Execution halted
