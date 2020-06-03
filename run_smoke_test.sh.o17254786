@@ -1,0 +1,84 @@
+[bwt_gen] Finished constructing BWT in 687 iterations.
+[20200603_224816] run_dir=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test
+[20200603_224816] ref_dir=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19
+[20200603_224816] install_dir=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0
+[20200603_224816] tumour_bam=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+[20200603_224816] normal_bam=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+[20200603_224816] snvvcf=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.somatic_caller_post_processed.vcf.gz
+[20200603_224816] threads=8
+[20200603_224816] sample=CPCT12345678
+[20200603_224816] normal_sample=CPCT12345678R
+[20200603_224816] tumour_sample=CPCT12345678T
+[20200603_224816] jvmheap=25g
+[20200603_224816] referencename=hg19
+[20200603_224816] rlib=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/rlib/
+[20200603_224816] ref_genome=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta
+[20200603_224816] viralreference=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/human_virus/human_virus.fa
+[20200603_224816] blacklist=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed
+[20200603_224816] repeatmasker=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/repeatmasker/hg19.fa.out
+[20200603_224816] bafsnps=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/germline_het_pon_hg19/GermlineHetPon.hg19.vcf.gz
+[20200603_224816] gcprofile=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gc/GC_profile.1000bp.cnp
+[20200603_224816] gridsspon=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/pon3792v1
+[20200603_224816] viral_hosts_csv=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/viral_host_ref.csv
+[20200603_224816] fusion_pairs_csv=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownFusionPairs.csv
+[20200603_224816] promiscuous_five_csv=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownPromiscuousFive.csv
+[20200603_224816] promiscuous_three_csv=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownPromiscuousThree.csv
+[20200603_224816] fragile_sites=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/fragile_sites_hmf.csv
+[20200603_224816] line_elements=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/line_elements.csv
+[20200603_224816] replication_origins=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/heli_rep_origins.bed
+[20200603_224816] ensembl_data_dir=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/ensembl_data_cache
+[20200603_224816] picardoptions=
+[20200603_224816] validation_stringency=STRICT
+
+
+
+Using working directory "/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss"
+Using reference genome "/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta"
+Using assembly bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Using output VCF /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Using 8 worker threads.
+Using blacklist /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed
+Using JVM maximum heap size of 25g for assembly and variant calling.
+Using input file /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Using input file /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+label is CPCT12345678R
+label is CPCT12345678T
+Found /stornext/System/data/apps/bwa/bwa-0.7.15/bin/bwa
+Found /stornext/System/data/apps/R/R-3.6.2/lib64/R/bin/Rscript
+Found /stornext/System/data/apps/samtools/samtools-1.9/bin/samtools
+Found /stornext/System/data/apps/java/java-1.8.0_211/bin/java
+Found /usr/bin/time
+samtools 1.9
+Using htslib 1.9
+R scripting front-end version 3.6.2 (2019-12-12)
+bwa Version: 0.7.15-r1140
+GNU time 1.7
+GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+java version "1.8.0_211"
+Java(TM) SE Runtime Environment (build 1.8.0_211-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
+Max file handles: 32768
+Wed Jun  3 22:48:17 AEST 2020	Running GRIDSS. The full log is in /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/gridss.full.20200603_224817.trqn-n048.hpc.wehi.edu.au.10496.log
+Wed Jun  3 22:48:17 AEST 2020	Start pre-processing	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Wed Jun  3 22:48:17 AEST 2020	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam	first 10000000 records
+Wed Jun  3 22:48:25 AEST 2020	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Wed Jun  3 22:48:34 AEST 2020	ComputeSamTags|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Wed Jun  3 22:48:40 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Wed Jun  3 22:59:10 AEST 2020	Complete pre-processing	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+Wed Jun  3 22:59:10 AEST 2020	Start pre-processing	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+Wed Jun  3 22:59:10 AEST 2020	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam	first 10000000 records
+Wed Jun  3 22:59:17 AEST 2020	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+Wed Jun  3 22:59:24 AEST 2020	ComputeSamTags|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+Wed Jun  3 22:59:29 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+Wed Jun  3 23:09:10 AEST 2020	Complete pre-processing	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+Wed Jun  3 23:09:10 AEST 2020	Start assembly	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Wed Jun  3 23:09:10 AEST 2020	AssembleBreakends	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam	job 0	total jobs 1
+Wed Jun  3 23:15:20 AEST 2020	CollectGridssMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Wed Jun  3 23:15:24 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Wed Jun  3 23:26:15 AEST 2020	Complete assembly	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Wed Jun  3 23:26:15 AEST 2020	Start calling	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:26:15 AEST 2020	IdentifyVariants	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:28:33 AEST 2020	AnnotateVariants	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:29:21 AEST 2020	AnnotateUntemplatedSequence	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:33:28 AEST 2020	Complete calling	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:33:28 AEST 2020	Run complete with 1 warnings and 0 errors.

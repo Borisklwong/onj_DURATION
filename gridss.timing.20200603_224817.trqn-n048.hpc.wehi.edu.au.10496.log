@@ -1,0 +1,684 @@
+	Command being timed: "echo"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 40%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 192
+	Voluntary context switches: 9
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "echo"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 576
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 192
+	Voluntary context switches: 1
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:48:17 AEST 2020	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam	first 10000000 records
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.analysis.CollectGridssMetrics TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working ASSUME_SORTED=true I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam THRESHOLD_COVERAGE=50000 FILE_EXTENSION=null GRIDSS_PROGRAM=null PROGRAM=null PROGRAM=CollectInsertSizeMetrics STOP_AFTER=10000000 VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 11.22
+	System time (seconds): 3.06
+	Percent of CPU this job got: 186%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 230276
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 57923
+	Voluntary context switches: 6467
+	Involuntary context switches: 598
+	Swaps: 0
+	File system inputs: 12288
+	File system outputs: 176
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:48:25 AEST 2020	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.CollectGridssMetricsAndExtractSVReads TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working ASSUME_SORTED=true I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/CPCT12345678R.bam THRESHOLD_COVERAGE=50000 FILE_EXTENSION=null GRIDSS_PROGRAM=null GRIDSS_PROGRAM=CollectCigarMetrics GRIDSS_PROGRAM=CollectMapqMetrics GRIDSS_PROGRAM=CollectTagMetrics GRIDSS_PROGRAM=CollectIdsvMetrics GRIDSS_PROGRAM=ReportThresholdCoverage PROGRAM=null PROGRAM=CollectInsertSizeMetrics SV_OUTPUT=/dev/stdout COMPRESSION_LEVEL=0 METRICS_OUTPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/CPCT12345678R.bam.sv_metrics INSERT_SIZE_METRICS=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.insert_size_metrics UNMAPPED_READS=false MIN_CLIP_LENGTH=5 INCLUDE_DUPLICATES=true VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 23.09
+	System time (seconds): 5.11
+	Percent of CPU this job got: 310%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 330492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 105864
+	Voluntary context switches: 8202
+	Involuntary context switches: 869
+	Swaps: 0
+	File system inputs: 17024
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -n -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.namedsorted-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.namedsorted.bam -@ 8 /dev/stdin"
+	User time (seconds): 0.06
+	System time (seconds): 0.09
+	Percent of CPU this job got: 1%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9236
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1943
+	Voluntary context switches: 257
+	Involuntary context switches: 51
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:48:34 AEST 2020	ComputeSamTags|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.ComputeSamTags TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta COMPRESSION_LEVEL=0 I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.namedsorted.bam O=/dev/stdout RECALCULATE_SA_SUPPLEMENTARY=true SOFTEN_HARD_CLIPS=true FIX_MATE_INFORMATION=true FIX_DUPLICATE_FLAG=true TAGS=null TAGS=NM TAGS=SA TAGS=R2 TAGS=Q2 TAGS=MC TAGS=MQ ASSUME_SORTED=true VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 5.80
+	System time (seconds): 1.84
+	Percent of CPU this job got: 144%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 226980
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 26762
+	Voluntary context switches: 5296
+	Involuntary context switches: 369
+	Swaps: 0
+	File system inputs: 15488
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.coordinate-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.coordinate.bam -@ 8 /dev/stdin"
+	User time (seconds): 0.05
+	System time (seconds): 0.09
+	Percent of CPU this job got: 2%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1959
+	Voluntary context switches: 239
+	Involuntary context switches: 12
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:48:40 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dsamjdk.create_index=false -Dgridss.gridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.SoftClipsToSplitReads TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.coordinate.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.primary.sv.bam OUTPUT_UNORDERED_RECORDS=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.supp.sv.bam WORKER_THREADS=8 VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 9.38
+	System time (seconds): 68.96
+	Percent of CPU this job got: 12%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:29.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5298472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 39266
+	Voluntary context switches: 60077
+	Involuntary context switches: 3125
+	Swaps: 0
+	File system inputs: 3040896
+	File system outputs: 432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -@ 8 -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.suppsorted.sv-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.suppsorted.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.supp.sv.bam"
+	User time (seconds): 0.01
+	System time (seconds): 0.01
+	Percent of CPU this job got: 62%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4092
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 701
+	Voluntary context switches: 105
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools merge -@ 8 /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/CPCT12345678R.bam.sv.tmp.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.primary.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/tmp.CPCT12345678R.bam.sc2sr.suppsorted.sv.bam"
+	User time (seconds): 0.04
+	System time (seconds): 0.02
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1570
+	Voluntary context switches: 105
+	Involuntary context switches: 13
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools index /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678R.bam.gridss.working/CPCT12345678R.bam.sv.tmp.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.01
+	Percent of CPU this job got: 29%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 937
+	Voluntary context switches: 5
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:59:10 AEST 2020	CollectInsertSizeMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam	first 10000000 records
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.analysis.CollectGridssMetrics TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working ASSUME_SORTED=true I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam THRESHOLD_COVERAGE=50000 FILE_EXTENSION=null GRIDSS_PROGRAM=null PROGRAM=null PROGRAM=CollectInsertSizeMetrics STOP_AFTER=10000000 VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 12.14
+	System time (seconds): 2.93
+	Percent of CPU this job got: 198%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 239460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 70851
+	Voluntary context switches: 5774
+	Involuntary context switches: 468
+	Swaps: 0
+	File system inputs: 12160
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:59:17 AEST 2020	CollectGridssMetricsAndExtractSVReads|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.CollectGridssMetricsAndExtractSVReads TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working ASSUME_SORTED=true I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/CPCT12345678T.bam THRESHOLD_COVERAGE=50000 FILE_EXTENSION=null GRIDSS_PROGRAM=null GRIDSS_PROGRAM=CollectCigarMetrics GRIDSS_PROGRAM=CollectMapqMetrics GRIDSS_PROGRAM=CollectTagMetrics GRIDSS_PROGRAM=CollectIdsvMetrics GRIDSS_PROGRAM=ReportThresholdCoverage PROGRAM=null PROGRAM=CollectInsertSizeMetrics SV_OUTPUT=/dev/stdout COMPRESSION_LEVEL=0 METRICS_OUTPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/CPCT12345678T.bam.sv_metrics INSERT_SIZE_METRICS=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.insert_size_metrics UNMAPPED_READS=false MIN_CLIP_LENGTH=5 INCLUDE_DUPLICATES=true VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 12.57
+	System time (seconds): 3.28
+	Percent of CPU this job got: 227%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 258884
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 57613
+	Voluntary context switches: 6187
+	Involuntary context switches: 412
+	Swaps: 0
+	File system inputs: 16896
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -n -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.namedsorted-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.namedsorted.bam -@ 8 /dev/stdin"
+	User time (seconds): 0.03
+	System time (seconds): 0.05
+	Percent of CPU this job got: 1%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6216
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1250
+	Voluntary context switches: 171
+	Involuntary context switches: 25
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:59:24 AEST 2020	ComputeSamTags|samtools	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.ComputeSamTags TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta COMPRESSION_LEVEL=0 I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.namedsorted.bam O=/dev/stdout RECALCULATE_SA_SUPPLEMENTARY=true SOFTEN_HARD_CLIPS=true FIX_MATE_INFORMATION=true FIX_DUPLICATE_FLAG=true TAGS=null TAGS=NM TAGS=SA TAGS=R2 TAGS=Q2 TAGS=MC TAGS=MQ ASSUME_SORTED=true VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 2.83
+	System time (seconds): 1.26
+	Percent of CPU this job got: 86%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 180112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 17949
+	Voluntary context switches: 4923
+	Involuntary context switches: 366
+	Swaps: 0
+	File system inputs: 15360
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.coordinate-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.coordinate.bam -@ 8 /dev/stdin"
+	User time (seconds): 0.02
+	System time (seconds): 0.07
+	Percent of CPU this job got: 2%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1371
+	Voluntary context switches: 191
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 22:59:29 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dsamjdk.create_index=false -Dgridss.gridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.SoftClipsToSplitReads TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.coordinate.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.primary.sv.bam OUTPUT_UNORDERED_RECORDS=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.supp.sv.bam WORKER_THREADS=8 VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 4.92
+	System time (seconds): 67.13
+	Percent of CPU this job got: 12%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:40.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5295968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 33007
+	Voluntary context switches: 56547
+	Involuntary context switches: 2388
+	Swaps: 0
+	File system inputs: 1523840
+	File system outputs: 408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -@ 8 -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.suppsorted.sv-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.suppsorted.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.supp.sv.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.01
+	Percent of CPU this job got: 27%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 602
+	Voluntary context switches: 122
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools merge -@ 8 /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/CPCT12345678T.bam.sv.tmp.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.primary.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/tmp.CPCT12345678T.bam.sc2sr.suppsorted.sv.bam"
+	User time (seconds): 0.03
+	System time (seconds): 0.01
+	Percent of CPU this job got: 74%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2812
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1104
+	Voluntary context switches: 51
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools index /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678T.bam.gridss.working/CPCT12345678T.bam.sv.tmp.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.01
+	Percent of CPU this job got: 29%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 980
+	Voluntary context switches: 4
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:09:10 AEST 2020	Start assembly	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+Wed Jun  3 23:09:10 AEST 2020	AssembleBreakends	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam	job 0	total jobs 1
+	Command being timed: "java -Xmx25g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dgridss.gridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.AssembleBreakends JOB_INDEX=0 JOB_NODES=1 TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta WORKER_THREADS=8 O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam INPUT_LABEL=CPCT12345678R INPUT_LABEL=CPCT12345678T BLACKLIST=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 1107.13
+	System time (seconds): 206.97
+	Percent of CPU this job got: 355%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:10.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9984492
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 352542
+	Voluntary context switches: 554728
+	Involuntary context switches: 59530
+	Swaps: 0
+	File system inputs: 326616
+	File system outputs: 536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:15:20 AEST 2020	CollectGridssMetrics	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.analysis.CollectGridssMetrics I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//CPCT12345678.assembly.bam THRESHOLD_COVERAGE=50000 TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss FILE_EXTENSION=null GRIDSS_PROGRAM=null GRIDSS_PROGRAM=CollectCigarMetrics GRIDSS_PROGRAM=CollectMapqMetrics GRIDSS_PROGRAM=CollectTagMetrics GRIDSS_PROGRAM=CollectIdsvMetrics GRIDSS_PROGRAM=ReportThresholdCoverage PROGRAM=null PROGRAM=CollectAlignmentSummaryMetrics VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 1.43
+	System time (seconds): 0.84
+	Percent of CPU this job got: 74%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 140712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 17808
+	Voluntary context switches: 3902
+	Involuntary context switches: 221
+	Swaps: 0
+	File system inputs: 13824
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:15:24 AEST 2020	SoftClipsToSplitReads	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dgridss.async.buffersize=16 -Dsamjdk.create_index=false -Dgridss.gridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.SoftClipsToSplitReads TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working/ WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta WORKER_THREADS=8 I=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam O=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.primary.sv.bam OUTPUT_UNORDERED_RECORDS=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.supp.sv.bam REALIGN_ENTIRE_READ=true VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 40.93
+	System time (seconds): 121.75
+	Percent of CPU this job got: 24%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:51.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5295892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 53907
+	Voluntary context switches: 99929
+	Involuntary context switches: 6986
+	Swaps: 0
+	File system inputs: 3078784
+	File system outputs: 552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools sort -@ 8 -T /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.suppsorted.sv-tmp -Obam -o /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.suppsorted.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.supp.sv.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.02
+	Percent of CPU this job got: 42%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3512
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 538
+	Voluntary context switches: 129
+	Involuntary context switches: 6
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools merge -@ 8 /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//CPCT12345678.assembly.bam.sv.tmp.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.primary.sv.bam /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//tmp.CPCT12345678.assembly.bam.sc2sr.suppsorted.sv.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 20%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1580
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 524
+	Voluntary context switches: 49
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "samtools index /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam.gridss.working//CPCT12345678.assembly.bam.sv.tmp.bam"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 21%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1236
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 395
+	Voluntary context switches: 4
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:26:15 AEST 2020	Start calling	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+Wed Jun  3 23:26:15 AEST 2020	IdentifyVariants	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+	Command being timed: "java -Xmx25g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dgridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.IdentifyVariants TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta WORKER_THREADS=8 INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam INPUT_LABEL=CPCT12345678R INPUT_LABEL=CPCT12345678T BLACKLIST=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed ASSEMBLY=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam OUTPUT_VCF=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz.gridss.working/CPCT12345678.gridss.vcf.gz.unallocated.vcf"
+	User time (seconds): 589.59
+	System time (seconds): 129.01
+	Percent of CPU this job got: 522%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:17.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6730232
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 224554
+	Voluntary context switches: 310522
+	Involuntary context switches: 34062
+	Swaps: 0
+	File system inputs: 80760
+	File system outputs: 264
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:28:33 AEST 2020	AnnotateVariants	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+	Command being timed: "java -Xmx25g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dgridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.AnnotateVariants TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta WORKER_THREADS=8 INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678R.bam INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/CPCT12345678T.bam INPUT_LABEL=CPCT12345678R INPUT_LABEL=CPCT12345678T BLACKLIST=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed ASSEMBLY=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.assembly.bam INPUT_VCF=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz.gridss.working/CPCT12345678.gridss.vcf.gz.unallocated.vcf OUTPUT_VCF=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz.gridss.working/CPCT12345678.gridss.vcf.gz.allocated.vcf VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 78.22
+	System time (seconds): 28.68
+	Percent of CPU this job got: 220%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:48.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1952176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 72166
+	Voluntary context switches: 18255
+	Involuntary context switches: 11290
+	Swaps: 0
+	File system inputs: 47360
+	File system outputs: 104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:29:21 AEST 2020	AnnotateUntemplatedSequence	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
+	Command being timed: "java -Xmx4g -Dreference_fasta=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta -Dsamjdk.use_async_io_read_samtools=true -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true -Dsamjdk.buffer_size=4194304 -Dgridss.output_to_temp_file=true -cp /home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0/gridss/gridss-2.7.3-gridss-jar-with-dependencies.jar gridss.AnnotateUntemplatedSequence TMP_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss WORKING_DIR=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss REFERENCE_SEQUENCE=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta WORKER_THREADS=8 INPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz.gridss.working/CPCT12345678.gridss.vcf.gz.allocated.vcf OUTPUT=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz VALIDATION_STRINGENCY=STRICT"
+	User time (seconds): 3.65
+	System time (seconds): 62.66
+	Percent of CPU this job got: 26%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:06.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5293860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 31604
+	Voluntary context switches: 52674
+	Involuntary context switches: 2813
+	Swaps: 0
+	File system inputs: 1523168
+	File system outputs: 304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+Wed Jun  3 23:33:28 AEST 2020	Complete calling	/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/smoke_test/gridss/CPCT12345678.gridss.vcf.gz
