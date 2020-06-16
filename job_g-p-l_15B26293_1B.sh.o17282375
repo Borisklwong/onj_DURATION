@@ -1,0 +1,72 @@
+No somatic SNV VCF supplied.
+[20200616_195021] run_dir=/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B
+[20200616_195021] ref_dir=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19
+[20200616_195021] install_dir=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/gridss-purple-linx-v1.2.0
+[20200616_195021] tumour_bam=/home/wong.b/onj_DURATION/processing/MESO/g-p-l/15B26293_1B_process/15B26293_1B_sort_mark.bam
+[20200616_195021] normal_bam=/home/wong.b/onj_DURATION/processing/BGI_public/g-p-l/CNX0043488_process/CL1000074821_merged_mark.bam
+[20200616_195021] snvvcf=nosnvvcf
+[20200616_195021] threads=8
+[20200616_195021] sample=15B26293_1B
+[20200616_195021] normal_sample=CL1000074821
+[20200616_195021] tumour_sample=15B26293_1B
+[20200616_195021] jvmheap=25g
+[20200616_195021] referencename=hg19
+[20200616_195021] rlib=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/rlib/
+[20200616_195021] ref_genome=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta
+[20200616_195021] viralreference=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/human_virus/human_virus.fa
+[20200616_195021] blacklist=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed
+[20200616_195021] repeatmasker=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/repeatmasker/hg19.fa.out
+[20200616_195021] bafsnps=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/germline_het_pon_hg19/GermlineHetPon.hg19.vcf.gz
+[20200616_195021] gcprofile=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gc/GC_profile.1000bp.cnp
+[20200616_195021] gridsspon=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/pon3792v1
+[20200616_195021] viral_hosts_csv=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/viral_host_ref.csv
+[20200616_195021] fusion_pairs_csv=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownFusionPairs.csv
+[20200616_195021] promiscuous_five_csv=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownPromiscuousFive.csv
+[20200616_195021] promiscuous_three_csv=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/knowledgebases/output/knownPromiscuousThree.csv
+[20200616_195021] fragile_sites=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/fragile_sites_hmf.csv
+[20200616_195021] line_elements=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/line_elements.csv
+[20200616_195021] replication_origins=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/sv/heli_rep_origins.bed
+[20200616_195021] ensembl_data_dir=/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/ensembl_data_cache
+[20200616_195021] picardoptions=
+[20200616_195021] validation_stringency=STRICT
+
+
+
+Using working directory "/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss"
+Tue Jun 16 19:50:21 AEST 2020: Full log file is: /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/gridss.full.20200616_195021.trqn-n030.hpc.wehi.edu.au.54578.log
+Tue Jun 16 19:50:21 AEST 2020: Found /usr/bin/time
+Tue Jun 16 19:50:21 AEST 2020: Using reference genome "/home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta"
+Tue Jun 16 19:50:21 AEST 2020: Using assembly bam /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.assembly.bam
+Tue Jun 16 19:50:21 AEST 2020: Using output VCF /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.gridss.vcf.gz
+Tue Jun 16 19:50:21 AEST 2020: Using 8 worker threads.
+Tue Jun 16 19:50:21 AEST 2020: Using blacklist /home/wong.b/projects/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/dbs/gridss/ENCFF001TDO.bed
+Tue Jun 16 19:50:21 AEST 2020: Using JVM maximum heap size of 25g for assembly and variant calling.
+Tue Jun 16 19:50:21 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/BGI_public/g-p-l/CNX0043488_process/CL1000074821_merged_mark.bam
+Tue Jun 16 19:50:21 AEST 2020: Using input file /home/wong.b/onj_DURATION/processing/MESO/g-p-l/15B26293_1B_process/15B26293_1B_sort_mark.bam
+Tue Jun 16 19:50:21 AEST 2020: label is CL1000074821
+Tue Jun 16 19:50:21 AEST 2020: label is 15B26293_1B
+Tue Jun 16 19:50:21 AEST 2020: Found /stornext/System/data/apps/R/R-3.6.2/lib64/R/bin/Rscript
+Tue Jun 16 19:50:21 AEST 2020: Found /stornext/System/data/apps/samtools/samtools-1.9/bin/samtools
+Tue Jun 16 19:50:21 AEST 2020: Found /stornext/System/data/apps/java/java-1.8.0_211/bin/java
+Tue Jun 16 19:50:21 AEST 2020: Found /stornext/System/data/apps/bwa/bwa-0.7.15/bin/bwa
+Tue Jun 16 19:50:21 AEST 2020: samtools version: 1.9+htslib-1.9
+Tue Jun 16 19:50:21 AEST 2020: R version: R scripting front-end version 3.6.2 (2019-12-12)
+Tue Jun 16 19:50:21 AEST 2020: bwa Version: 0.7.15-r1140
+Tue Jun 16 19:50:21 AEST 2020: time version: GNU time 1.7
+Tue Jun 16 19:50:21 AEST 2020: bash version: GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+Tue Jun 16 19:50:21 AEST 2020: java version: java version "1.8.0_211"
+Java(TM) SE Runtime Environment (build 1.8.0_211-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
+Tue Jun 16 19:50:21 AEST 2020: Max file handles: 32768
+Tue Jun 16 19:50:21 AEST 2020: Running GRIDSS steps: setupreference, preprocess, assemble, call,
+Tue Jun 16 19:50:21 AEST 2020: Running	PrepareReference	(once-off setup for reference genome)
+Tue Jun 16 19:50:23 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/BGI_public/g-p-l/CNX0043488_process/CL1000074821_merged_mark.bam
+Tue Jun 16 19:50:23 AEST 2020: Skipping pre-processing as /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/CL1000074821_merged_mark.bam.gridss.working/CL1000074821_merged_mark.bam.sv.bam already exists. /home/wong.b/onj_DURATION/processing/BGI_public/g-p-l/CNX0043488_process/CL1000074821_merged_mark.bam
+Tue Jun 16 19:50:23 AEST 2020: Start pre-processing	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/15B26293_1B_process/15B26293_1B_sort_mark.bam
+Tue Jun 16 19:50:23 AEST 2020: Skipping pre-processing as /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B_sort_mark.bam.gridss.working/15B26293_1B_sort_mark.bam.sv.bam already exists. /home/wong.b/onj_DURATION/processing/MESO/g-p-l/15B26293_1B_process/15B26293_1B_sort_mark.bam
+Tue Jun 16 19:50:23 AEST 2020: Start assembly	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.assembly.bam
+Tue Jun 16 19:50:23 AEST 2020: Skipping assembly as /home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.assembly.bam already exists.	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.assembly.bam
+Tue Jun 16 19:50:23 AEST 2020: Complete assembly	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.assembly.bam
+Tue Jun 16 19:50:23 AEST 2020: Start calling	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.gridss.vcf.gz
+Tue Jun 16 19:50:23 AEST 2020: Running	IdentifyVariants	/home/wong.b/onj_DURATION/processing/MESO/g-p-l/four_normal_gridss/15B26293_1B/gridss/15B26293_1B.gridss.vcf.gz
+"$timecmd java -Xmx$jvmheap $jvm_args -Dgridss.output_to_temp_file=true -cp $gridss_jar gridss.IdentifyVariants TMP_DIR=$workingdir WORKING_DIR=$workingdir REFERENCE_SEQUENCE=$reference WORKER_THREADS=$threads $input_args $blacklist_arg $config_args ASSEMBLY=$assembly OUTPUT_VCF=$prefix.unallocated.vcf $readpairing_args" command completed with exit code 1.
