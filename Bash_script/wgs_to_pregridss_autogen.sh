@@ -3,15 +3,17 @@
 #Boris Wong
 #
 #GENERATING WGS raw data to Pre-GRIDSS script
-#
-ref=~/projects/reference_genomes/human/hg19.fa
+#align with 
+#illumina Homo_sapiens.GRCh37
+
+ref=/home/wong.b/onj_DURATION/gridss-purple-linx/gridss-purple-linx-master/hg19/refgenomes/Homo_sapiens.GRCh37.GATK.illumina/Homo_sapiens.GRCh37.GATK.illumina.fasta
 
 data_folder=~/projects/onj_DURATION/raw_data/BGI_samples/BGI_MESO/Clean
 
 for fq1 in $data_folder/*/*_1.fq.gz ; do
         name=$(basename $(dirname $fq1))
         fq2=$(dirname $fq1)/$(basename $fq1 _1.fq.gz)_2.fq.gz
-        outdir=~/projects/onj_DURATION/scripts/MESO/${name}_script
+        outdir=~/projects/onj_DURATION/scripts/MESO/g-p-l/${name}_script
         scriptname=$outdir/$(basename $fq1 _1.fq.gz)_wgs_to_pregridss.sh
         echo Generating $scriptname
         mkdir -p $outdir
@@ -23,9 +25,9 @@ for fq1 in $data_folder/*/*_1.fq.gz ; do
 #
 module add bwa/0.7.15 samtools/1.9
 #
-mkdir -p ~/onj_DURATION/processing/MESO/${name}_process
+mkdir -p ~/onj_DURATION/processing/MESO/g-p-l/${name}_process
 #
-cd ~/onj_DURATION/processing/MESO/${name}_process 
+cd ~/onj_DURATION/processing/MESO/g-p-l/${name}_process
 #
 if [[ ! -f "${name}.bam" ]]; then
 	echo "Aligning with hg19 and runing fixamte"
