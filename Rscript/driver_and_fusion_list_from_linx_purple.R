@@ -3,8 +3,8 @@ library(readr)
 library(plyr)
 ### WARNING: Do NOT run this script under LINX or PURPLE output folder #########
 
-gpl_out_dir = "/stornext/Bioinf/data/bioinf-data/Papenfuss_lab/projects/onj_DURATION/processing/MESO/g-p-l_26JAN2021"
-working_dir = "/stornext/Bioinf/data/bioinf-data/Papenfuss_lab/projects/onj_DURATION/processing/MESO/g-p-l_26JAN2021/MESO_linx_purple"
+gpl_out_dir = ""
+working_dir = ""
 # Copy all the driver.catalog files to working dir
 file.copy(Sys.glob(paste0(gpl_out_dir,"/*/*/*/*.driver.catalog.tsv")), working_dir)
 # Copy all the .linx.fusion.tsv files to working dir
