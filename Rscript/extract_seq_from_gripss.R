@@ -86,10 +86,11 @@ write.csv(vcf_asm_df, paste0(vcf_path,"/",sample_name,"_vcf_asm_df.csv"))
 
 # Output result for Primer3 input format, primers flanking to breakpoints
 vcf_to_p3_df = vcf_asm_df %>% mutate(p3_record = paste0(
-  "SEQUENCE_ID=",vcf_asm_df$vcfId,"_",sample_name,"_",vcf_asm_df$QUAL,"_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"\n",
+  "SEQUENCE_ID=",vcf_asm_df$QUAL,"_",vcf_asm_df$vcfId,"_",sample_name,"_","_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"\n",
   "SEQUENCE_TEMPLATE=",vcf_asm_df$seq,"\n",
   "SEQUENCE_TARGET=",vcf_asm_df$P3_SEQ_TARGET,"\n",
   "="))
+#remove the "o" or "h" after vcfId
 str_sub(vcf_to_p3_df$vcfId, -1, -1) = ""
 vcf_to_p3_df_new = vcf_to_p3_df[!duplicated(vcf_to_p3_df$vcfId),]
 
@@ -97,10 +98,11 @@ writeLines(vcf_to_p3_df_new$p3_record, paste0(vcf_path,"/",sample_name,"_vcf_to_
 
 # Output result for Primer3 input format, primers overlapping to breakpoints
 vcf_to_p3_df_overlap = vcf_asm_df %>% mutate(p3_record = paste0(
-  "SEQUENCE_ID=",vcf_asm_df$vcfId,"_",sample_name,"_",vcf_asm_df$QUAL,"_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"_overlap","\n",
+  "SEQUENCE_ID=",vcf_asm_df$QUAL,"_",vcf_asm_df$vcfId,"_",sample_name,"_","_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"_overlap","\n",
   "SEQUENCE_TEMPLATE=",vcf_asm_df$seq,"\n",
   "SEQUENCE_OVERLAP_JUNCTION_LIST=",vcf_asm_df$P3_TARGET,"\n",
   "="))
+#remove the "o" or "h" after vcfId
 str_sub(vcf_to_p3_df_overlap$vcfId, -1, -1) = ""
 vcf_to_p3_df_overlap_new = vcf_to_p3_df_overlap[!duplicated(vcf_to_p3_df_overlap$vcfId),]
 
