@@ -1,14 +1,6 @@
 #!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=26
-#SBATCH --job-name=DURATION_gripss_to_primer
-#SBATCH --time=48:00:00
-#SBATCH --mem=64G
-#Boris Wong
-#
-#GENERATING g-p-l 
-#align with 
-#illumina Homo_sapiens.GRCh37
+
+#Gen job from post g-p-l to primer fasta
 
 # Local system locations
 	vcf_dir=/home/users/allstaff/wong.b/onj_DURATION/processing/BGI_DURATION_processing
