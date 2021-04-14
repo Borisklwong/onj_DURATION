@@ -9,6 +9,8 @@ library(dplyr)
 args = commandArgs(TRUE)
 sample_name= args[1]
 file_path= args[2]
+# sample_name= "1-009_MC_S"
+# file_path= "/stornext/Home/data/allstaff/w/wong.b/onj_DURATION/processing/BGI_DURATION_processing/before_trimming/1-009_MC_S_process/1-009_MC_S_g-p-l_out"
 vcf_path = paste0(file_path,"/gripss")
 bam_path = paste0(file_path,"/gridss/",sample_name,".assembly.bam.gridss.working")
 
@@ -23,8 +25,10 @@ vcf_filt = vcf[filt(vcf) == "PASS"]
 vcf_bpgr = breakpointRanges(vcf_filt)
 #TO DO: filter variants  5kp
 vcf_bpgr = vcf_bpgr[!(seqnames(vcf_bpgr) == seqnames(partner(vcf_bpgr)) & abs(start(vcf_bpgr) - start(partner(vcf_bpgr))) < 5000)]
+#getting BEDID from vcf
 vcf_bpgr$BEID = info(vcf_filt[vcf_bpgr$sourceId])$BEID
-
+#getting IHOMPOS from vcf
+vcf_bpgr$IHOMPOS = info(vcf_filt[vcf_bpgr$sourceId])$IHOMPOS
 
 
 #Cross-match filtered vcf with GRIDSS assembly.bam
@@ -50,11 +54,11 @@ vcf_asm_df = data.frame(
   mutate(asm_break_pos = ifelse(strand.vcf == "+", end.asm, start.asm)) %>%
   filter(asm_break_pos >= start.vcf & asm_break_pos <= end.vcf & seqnames.vcf == seqnames.asm) %>%
   distinct() %>%
-# Remove calls with > 1 "S"s in cigar(i.e. more than 1 "S"s in cigar)
+  # Remove calls with > 1 "S"s in cigar(i.e. more than 1 "S"s in cigar)
   filter(str_count(cigar, "S") == 1) %>%
-# Only keep insertion length <= 3 bps
+  # Only keep insertion length <= 3 bps
   filter(insLen <= 3) %>%
-# Only keep interchromosomal calls
+  # Only keep interchromosomal calls
   filter(is.na(svLen) == TRUE)
 
 #sort vcf_asm_df by GRIDSS score
@@ -86,24 +90,26 @@ write.csv(vcf_asm_df, paste0(vcf_path,"/",sample_name,"_vcf_asm_df.csv"))
 
 # Output result for Primer3 input format, primers flanking to breakpoints
 vcf_to_p3_df = vcf_asm_df %>% mutate(p3_record = paste0(
-  "SEQUENCE_ID=",vcf_asm_df$QUAL,"_",vcf_asm_df$vcfId,"_",sample_name,"_","_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"\n",
+  "SEQUENCE_ID=",vcf_asm_df$QUAL,"@",vcf_asm_df$vcfId,"@",sample_name,"@chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"\n",
   "SEQUENCE_TEMPLATE=",vcf_asm_df$seq,"\n",
   "SEQUENCE_TARGET=",vcf_asm_df$P3_SEQ_TARGET,"\n",
-  "="))
+  "="),
+  SEQ_NAME = paste0(vcf_asm_df$QUAL,"@",vcf_asm_df$vcfId,"@",sample_name,"@chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames))
 #remove the "o" or "h" after vcfId
 str_sub(vcf_to_p3_df$vcfId, -1, -1) = ""
 vcf_to_p3_df_new = vcf_to_p3_df[!duplicated(vcf_to_p3_df$vcfId),]
-
+save(vcf_to_p3_df_new, file = paste0(sample_name,"_vcf_to_p3_df_new"))
 writeLines(vcf_to_p3_df_new$p3_record, paste0(vcf_path,"/",sample_name,"_vcf_to_p3.txt"))
 
 # Output result for Primer3 input format, primers overlapping to breakpoints
 vcf_to_p3_df_overlap = vcf_asm_df %>% mutate(p3_record = paste0(
-  "SEQUENCE_ID=",vcf_asm_df$QUAL,"_",vcf_asm_df$vcfId,"_",sample_name,"_","_chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"_overlap","\n",
+  "SEQUENCE_ID=",vcf_asm_df$QUAL,"@",vcf_asm_df$vcfId,"@",sample_name,"@chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"@overlap","\n",
   "SEQUENCE_TEMPLATE=",vcf_asm_df$seq,"\n",
   "SEQUENCE_OVERLAP_JUNCTION_LIST=",vcf_asm_df$P3_TARGET,"\n",
-  "="))
+  "="),
+  SEQ_NAME = paste0(vcf_asm_df$QUAL,"@",vcf_asm_df$vcfId,"@",sample_name,"@chr",vcf_asm_df$seqnames.vcf,"-",vcf_asm_df$partner_seqnames,"@overlap"))
 #remove the "o" or "h" after vcfId
 str_sub(vcf_to_p3_df_overlap$vcfId, -1, -1) = ""
 vcf_to_p3_df_overlap_new = vcf_to_p3_df_overlap[!duplicated(vcf_to_p3_df_overlap$vcfId),]
-
+save(vcf_to_p3_df_overlap_new, file = paste0(sample_name,"_vcf_to_p3_df_overlap_new"))
 writeLines(vcf_to_p3_df_overlap_new$p3_record, paste0(vcf_path,"/",sample_name,"_vcf_to_p3_overlap.txt"))
