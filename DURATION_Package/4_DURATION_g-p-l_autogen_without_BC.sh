@@ -11,18 +11,19 @@
 #illumina Homo_sapiens.GRCh37
 
 # Local system locations
-	bam_folder=/home/users/allstaff/wong.b/onj_DURATION/processing/BGI_DURATION_processing/120x
+date=23MAR2022_MESO
+	bam_folder=/home/users/allstaff/wong.b/onj_DURATION/processing/BGI_DURATION_processing/${date}
 	install_dir=/home/users/allstaff/wong.b/onj_DURATION/tools/gridss-purple-linx/package
 	ref_data=/home/users/allstaff/wong.b/onj_DURATION/tools/ref_data/gpl_ref_data_hg37
 	
-for bam in $bam_folder/*/*merged_mark.bam ; do
+for bam in $bam_folder/*/*_merged_mark.bam ; do
         sample=$(basename $bam _merged_mark.bam)
-        outdir=/home/users/allstaff/wong.b/onj_DURATION/scripts/BGI_DURATION/${sample}_script_without_BC
-	data_dir=${bam_folder}/${sample}_process
-	run_dir=${bam_folder}/${sample}_process/${sample}_g-p-l_out_without_BC
-        scriptname=$outdir/${sample}_g-p-l.sh
+        outdir=${bam_folder}/${sample}_process
+	run_dir=${bam_folder}/${sample}_process
+        scriptname=$outdir/job/${sample}_g-p-l.sh
         echo Generating $scriptname
         mkdir -p $outdir
+	mkdir -p $run_dir
         cat > $scriptname << EOF
 #!/bin/bash
 #SBATCH --nodes=1
@@ -53,7 +54,7 @@ export LINX_JAR=$(find $install_dir -name '*linx*jar')
 
 bash -x gridss-purple-linx.sh \
 	-o $run_dir \
-	-t $data_dir/${sample}_merged_mark.bam \
+	-t $bam \
 	--nosnvvcf \
 	-s $sample \
 	--tumour_sample ${sample}T \
